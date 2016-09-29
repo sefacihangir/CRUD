@@ -17,11 +17,11 @@
 		</tr>
 		<tr>
 			<td>First name</td>
-			<td><form:input path="firstname" /></td>
+			<td><form:input path="studentName" /></td>
 		</tr>
 		<tr>
 			<td>Last name</td>
-			<td><form:input path="lastname" /></td>
+			<td><form:input path="studentSurname" /></td>
 		</tr>
 		<tr>
 			<td>Year Level</td>
