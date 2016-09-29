@@ -23,30 +23,23 @@ public class Student {
 	private String studentSurname;
 	
 	@Column
-	private String studentDepartment;
+	private int yearLevel;
 	
-	@Column
-	private String studentAddress;
-
-	// Destructor of Student
+	
 	public Student() {
+		
 	}
 	
-
-	// Constructor of Student
-
-	public Student(int studentId, String studentName, String studentSurname,
-			String studentDepartment, String studentAddress) {
-		super();
+	
+	public Student(int studentId, String studentName, String studentSurname, int yearLevel) {
 		this.studentId = studentId;
 		this.studentName = studentName;
 		this.studentSurname = studentSurname;
-		this.studentDepartment = studentDepartment;
-		this.studentAddress = studentAddress;
+		this.yearLevel = yearLevel;
 	}
 
-
-
+	
+	
 	public int getStudentId() {
 		return studentId;
 	}
@@ -71,20 +64,12 @@ public class Student {
 		this.studentSurname = studentSurname;
 	}
 
-	public String getStudentDepartment() {
-		return studentDepartment;
+	public int getYearLevel() {
+		return yearLevel;
 	}
 
-	public void setStudentDepartment(String studentDepartment) {
-		this.studentDepartment = studentDepartment;
-	}
-
-	public String getStudentAddress() {
-		return studentAddress;
-	}
-
-	public void setStudentAddress(String studentAddress) {
-		this.studentAddress = studentAddress;
+	public void setYearLevel(int yearLevel) {
+		this.yearLevel = yearLevel;
 	}
 
 }
